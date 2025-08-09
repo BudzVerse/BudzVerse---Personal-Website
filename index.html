@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preload" href="/_next/static/media/0484562807a97172-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+		<link rel="preload" href="/_next/static/media/4c285fdca692ea22-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+		<link rel="preload" href="/_next/static/media/8888a3826f4a3af4-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+		<link rel="preload" href="/_next/static/media/b957ea75a84b6ea7-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+		<link rel="preload" href="/_next/static/media/eafabf029ad39a43-s.p.woff2" as="font" crossorigin="" type="font/woff2" />
+		<link rel="stylesheet" href="css/c380ce32ea713e99.css" data-precedence="next" />
+		<link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-1eca23d54618137a.js" />
+		<script src="js/4bd1b696-9954d8c2b0b5f18f.js" async=""></script>
+		<script src="js/684-8989c9781456133e.js" async=""></script>
+		<script src="js/main-app-70f3fd67bd0c0bda.js" async=""></script>
+		<script src="js/598-fbec8651084d7a7e.js" async=""></script>
+		<script src="js/57-f8c6fba1509fce51.js" async=""></script>
+		<script src="js/layout-e92403ac589f22e8.js" async=""></script>
+		<script src="js/917-7c8d1ef844b4f2b0.js" async=""></script>
+		<script src="js/950-d61fad892073cdbc.js" async=""></script>
+		<script src="js/679-f889ffbdfe024a73.js" async=""></script>
+		<script src="js/298-7f9e2991a0bc1972.js" async=""></script>
+		<script src="js/page-11a3f6411a25121f.js" async=""></script>
+		<meta name="next-size-adjust" content="" />
+		<title>KuroHost - Pterodactyl Panel</title>
+		<meta name="description" content="Beli panel Pterodactyl dengan mudah dan cepat" />
+		<link rel="icon" href="images/itzky.png" />
+		<link rel="stylesheet" href="css/all.min.css" />
+		<script src="js/polyfills-42372ed130431b0a.js" nomodule=""></script>
+	</head>
+	<body class="__className_51684b">
+		<script>
+			((e,t,r,n,o,a,i,u)=>{let l=document.documentElement,s=["light","dark"];function c(t){var r;(Array.isArray(e)?e:[e]).forEach(e=>{let r="class"===e,n=r&&a?o.map(e=>a[e]||e):o;r?(l.classList.remove(...n),l.classList.add(a&&a[t]?a[t]:t)):l.setAttribute(e,t)}),r=t,u&&s.includes(r)&&(l.style.colorScheme=r)}if(n)c(n);else try{let e=localStorage.getItem(t)||r,n=i&&"system"===e?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":e;c(n)}catch(e){}})("class","theme","dark",null,["light","dark"],null,true,true)
+		</script>
+		<div class="fixed inset-0 z-50 flex items-center justify-center bg-dark-500" style="opacity:1">
+			<div class="flex flex-col items-center">
+				<div class="mb-6" style="opacity:0;transform:scale(0.8)">
+					<div class="relative">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-shopping-cart w-20 h-20 text-red-500"
+						>
+							<circle cx="8" cy="21" r="1"></circle>
+							<circle cx="19" cy="21" r="1"></circle>
+							<path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+						</svg>
+						<div class="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-red-500 to-red-700 rounded-full" style="width:0px"></div>
+					</div>
+				</div>
+				<h1 class="text-3xl font-bold text-white mb-2" style="opacity:0;transform:translateY(20px)"><span class="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">KuroHost</span></h1>
+				<div class="flex space-x-2 mt-4" style="opacity:0;transform:scale(0)">
+					<div class="w-3 h-3 bg-red-500 rounded-full"></div>
+					<div class="w-3 h-3 bg-red-600 rounded-full"></div>
+					<div class="w-3 h-3 bg-red-700 rounded-full"></div>
+				</div>
+			</div>
+		</div>
+		<div class="min-h-screen bg-gradient-to-br from-dark-500 via-dark-700 to-dark-900">
+			<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 bg-transparent">
+				<div class="max-w-6xl mx-auto flex justify-between items-center">
+					<a class="flex items-center space-x-2" href="/">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							class="lucide lucide-shopping-cart w-8 h-8 text-white"
+						>
+							<circle cx="8" cy="21" r="1"></circle>
+							<circle cx="19" cy="21" r="1"></circle>
+							<path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+						</svg>
+						<span class="text-xl font-bold transition-colors text-white">KuroHost</span>
+					</a>
+					<div class="hidden md:flex items-center space-x-8">
+						<a class="font-medium transition-colors flex items-center text-gray-300 hover:text-red-400" href="/">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-house w-4 h-4 mr-1"
+							>
+								<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+								<path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+							</svg>
+							Home
+						</a>
+						<a class="font-medium transition-colors flex items-center text-gray-300 hover:text-red-400" href="/transactions">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-file-text w-4 h-4 mr-1"
+							>
+								<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+								<path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+								<path d="M10 9H8"></path>
+								<path d="M16 13H8"></path>
+								<path d="M16 17H8"></path>
+							</svg>
+							Transaksi
+						</a>
+						<a class="font-medium transition-colors flex items-center text-gray-300 hover:text-red-400" href="/history">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-history w-4 h-4 mr-1"
+							>
+								<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+								<path d="M3 3v5h5"></path>
+								<path d="M12 7v5l4 2"></path>
+							</svg>
+							Riwayat
+						</a>
+						<a href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e" target="_blank" rel="noopener noreferrer" class="font-medium transition-colors flex items-center text-gray-300 hover:text-red-400">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-users w-4 h-4 mr-1"
+							>
+								<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+								<circle cx="9" cy="7" r="4"></circle>
+								<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+							</svg>
+							Community
+						</a>
+					</div>
+					<button class="md:hidden focus:outline-none transition-colors z-50 text-white">
+						<svg width="23" height="23" viewBox="0 0 23 23">
+							<path fill="transparent" stroke-width="2" stroke="white" stroke-linecap="round"></path>
+							<path fill="transparent" stroke-width="2" stroke="white" stroke-linecap="round" d="M 2 9.423 L 20 9.423"></path>
+							<path fill="transparent" stroke-width="2" stroke="white" stroke-linecap="round"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="md:hidden absolute top-full left-0 right-0 bg-dark-400 shadow-lg border-t border-dark-300 overflow-hidden" style="height:0px;opacity:0">
+					<div class="flex flex-col p-4 space-y-3">
+						<a class="text-gray-300 font-medium py-2 hover:text-red-400 flex items-center" href="/">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-house w-4 h-4 mr-2"
+							>
+								<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+								<path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+							</svg>
+							Home
+						</a>
+						<a class="text-gray-300 font-medium py-2 hover:text-red-400 flex items-center" href="/transactions">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-file-text w-4 h-4 mr-2"
+							>
+								<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+								<path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+								<path d="M10 9H8"></path>
+								<path d="M16 13H8"></path>
+								<path d="M16 17H8"></path>
+							</svg>
+							Transaksi
+						</a>
+						<a class="text-gray-300 font-medium py-2 hover:text-red-400 flex items-center" href="/history">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-history w-4 h-4 mr-2"
+							>
+								<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+								<path d="M3 3v5h5"></path>
+								<path d="M12 7v5l4 2"></path>
+							</svg>
+							Riwayat
+						</a>
+						<a href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e" target="_blank" rel="noopener noreferrer" class="text-gray-300 font-medium py-2 hover:text-red-400 flex items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								class="lucide lucide-users w-4 h-4 mr-2"
+							>
+								<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+								<circle cx="9" cy="7" r="4"></circle>
+								<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+								<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+							</svg>
+							Community
+						</a>
+					</div>
+				</div>
+			</nav>
+			<div class="fixed bottom-6 right-6 z-40">
+				<button class="w-12 h-12 rounded-full bg-red-600 hover:bg-red-700 text-white shadow-lg flex items-center justify-center" tabindex="0">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 w-5 h-5">
+						<circle cx="18" cy="5" r="3"></circle>
+						<circle cx="6" cy="12" r="3"></circle>
+						<circle cx="18" cy="19" r="3"></circle>
+						<line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+						<line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+					</svg>
+				</button>
+			</div>
+			<section class="min-h-screen flex items-center justify-center pt-16 pb-20 px-4">
+				<div class="container mx-auto">
+					<div class="rounded-lg border text-card-foreground max-w-2xl mx-auto shadow-2xl border-dark-300 overflow-hidden animate-slide-up bg-dark-400">
+						<div class="h-3 bg-gradient-to-r from-red-600 to-red-800"></div>
+						<div class="p-8">
+							<form class="space-y-6">
+								<div class="space-y-2">
+									<label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-base font-medium flex items-center gap-2" for="username">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-user w-4 h-4 text-red-500"
+										>
+											<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+											<circle cx="12" cy="7" r="4"></circle>
+										</svg>
+										Username
+									</label>
+									<div class="relative">
+										<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="lucide lucide-user w-5 h-5 text-gray-500"
+											>
+												<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+												<circle cx="12" cy="7" r="4"></circle>
+											</svg>
+										</div>
+										<input
+											class="flex w-full rounded-md border px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-14 text-base pl-10 bg-dark-500 border-dark-300 focus:border-red-500 focus:ring-red-500"
+											id="username"
+											placeholder="Masukkan username"
+											required=""
+											value=""
+										/>
+									</div>
+								</div>
+								<div class="space-y-2">
+									<label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-base font-medium flex items-center gap-2" for="email">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-mail w-4 h-4 text-red-500"
+										>
+											<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+											<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+										</svg>
+										Email
+									</label>
+									<div class="relative">
+										<div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="lucide lucide-mail w-5 h-5 text-gray-500"
+											>
+												<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+												<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+											</svg>
+										</div>
+										<input
+											type="email"
+											class="flex w-full rounded-md border px-3 py-2 ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm h-14 text-base pl-10 bg-dark-500 border-dark-300 focus:border-red-500 focus:ring-red-500"
+											id="email"
+											placeholder="Masukkan email"
+											required=""
+											value=""
+										/>
+									</div>
+								</div>
+								<div class="space-y-2">
+									<label class="peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-base font-medium flex items-center gap-2" for="plan">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-package w-4 h-4 text-red-500"
+										>
+											<path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
+											<path d="M12 22V12"></path>
+											<path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"></path>
+											<path d="m7.5 4.27 9 5.15"></path>
+										</svg>
+										Pilih Paket
+									</label>
+									<button
+										type="button"
+										role="combobox"
+										aria-controls="radix-«R2djhrlb»"
+										aria-expanded="false"
+										aria-autocomplete="none"
+										dir="ltr"
+										data-state="closed"
+										data-placeholder=""
+										class="flex items-center justify-between rounded-md border px-3 py-2 ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1 w-full h-14 text-base bg-dark-500 border-dark-300"
+										id="plan"
+									>
+										<span style="pointer-events:none">Pilih paket</span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="lucide lucide-chevron-down h-4 w-4 opacity-50"
+											aria-hidden="true"
+										>
+											<path d="m6 9 6 6 6-6"></path>
+										</svg>
+									</button>
+									<select aria-hidden="true" tabindex="-1" style="position:absolute;border:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;word-wrap:normal"></select>
+								</div>
+								<button
+									class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 w-full bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 h-14 text-lg font-medium transition-all duration-300 ease-in-out transform hover:scale-[1.02] shadow-lg"
+									type="submit"
+								>
+									Beli Sekarang
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="py-16 bg-gradient-to-b from-dark-400 to-dark-500">
+				<div class="container mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center text-white mb-4" style="opacity:0;transform:translateY(20px)">
+						<span class="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">Mengapa Memilih Kami?</span>
+					</h2>
+					<p class="text-center text-gray-300 max-w-2xl mx-auto mb-12" style="opacity:0;transform:translateY(20px)">Kami menyediakan layanan panel Pterodactyl terbaik dengan fitur lengkap dan harga terjangkau.</p>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+						<div class="bg-dark-400 rounded-lg p-6 border border-dark-300 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-red-500/30" style="opacity:0;transform:translateY(30px)">
+							<div class="flex items-center mb-4">
+								<div class="p-3 bg-dark-500 rounded-full mr-4">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-shield w-10 h-10 text-red-500"
+									>
+										<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+									</svg>
+								</div>
+								<h3 class="text-xl font-semibold text-white">Keamanan Terjamin</h3>
+							</div>
+							<p class="text-gray-300">Panel Pterodactyl kami menjamin keamanan data dan server Anda dengan sistem keamanan terbaik.</p>
+						</div>
+						<div class="bg-dark-400 rounded-lg p-6 border border-dark-300 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-red-500/30" style="opacity:0;transform:translateY(30px)">
+							<div class="flex items-center mb-4">
+								<div class="p-3 bg-dark-500 rounded-full mr-4">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-zap w-10 h-10 text-red-500"
+									>
+										<path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
+									</svg>
+								</div>
+								<h3 class="text-xl font-semibold text-white">Performa Tinggi</h3>
+							</div>
+							<p class="text-gray-300">Nikmati performa server yang cepat dan stabil untuk menjalankan aplikasi Anda tanpa kendala.</p>
+						</div>
+						<div class="bg-dark-400 rounded-lg p-6 border border-dark-300 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-red-500/30" style="opacity:0;transform:translateY(30px)">
+							<div class="flex items-center mb-4">
+								<div class="p-3 bg-dark-500 rounded-full mr-4">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-clock w-10 h-10 text-red-500"
+									>
+										<circle cx="12" cy="12" r="10"></circle>
+										<polyline points="12 6 12 12 16 14"></polyline>
+									</svg>
+								</div>
+								<h3 class="text-xl font-semibold text-white">Uptime 99.9%</h3>
+							</div>
+							<p class="text-gray-300">Kami menjamin uptime server hingga 99.9% sehingga aplikasi Anda selalu online dan dapat diakses.</p>
+						</div>
+						<div class="bg-dark-400 rounded-lg p-6 border border-dark-300 shadow-lg hover:shadow-xl transition-all duration-300 hover:border-red-500/30" style="opacity:0;transform:translateY(30px)">
+							<div class="flex items-center mb-4">
+								<div class="p-3 bg-dark-500 rounded-full mr-4">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-credit-card w-10 h-10 text-red-500"
+									>
+										<rect width="20" height="14" x="2" y="5" rx="2"></rect>
+										<line x1="2" x2="22" y1="10" y2="10"></line>
+									</svg>
+								</div>
+								<h3 class="text-xl font-semibold text-white">Pembayaran Mudah</h3>
+							</div>
+							<p class="text-gray-300">Proses pembayaran yang mudah dan cepat dengan berbagai metode pembayaran yang tersedia.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="py-16 bg-dark-500">
+				<div class="container mx-auto px-4">
+					<h2 class="text-3xl font-bold text-center text-white mb-12" style="opacity:0;transform:translateY(20px)"><span class="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">Statistik Kami</span></h2>
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+						<div class="bg-dark-400 rounded-lg p-6 border border-dark-300 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-red-500/30" style="opacity:0;transform:translateY(30px)">
+							<div class="flex items-center justify-center mb-4">
+								<div class="p-3 bg-dark-500 rounded-full">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-users w-8 h-8 text-red-500"
+									>
+										<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+										<circle cx="9" cy="7" r="4"></circle>
+										<path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+										<path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+									</svg>
+								</div>
+							</div>
+							<h3 class="text-xl font-semibold text-center text-white mb-2">Total Pengguna</h3>
+							<p class="text-3xl font-bold text-center text-red-500">0</p>
+						</div>
+						<div class="bg-dark-400 rounded-lg p-6 border border-dark-300 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-red-500/30" style="opacity:0;transform:translateY(30px)">
+							<div class="flex items-center justify-center mb-4">
+								<div class="p-3 bg-dark-500 rounded-full">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-server w-8 h-8 text-red-500"
+									>
+										<rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect>
+										<rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect>
+										<line x1="6" x2="6.01" y1="6" y2="6"></line>
+										<line x1="6" x2="6.01" y1="18" y2="18"></line>
+									</svg>
+								</div>
+							</div>
+							<h3 class="text-xl font-semibold text-center text-white mb-2">Total Server</h3>
+							<p class="text-3xl font-bold text-center text-red-500">0</p>
+						</div>
+						<div class="bg-dark-400 rounded-lg p-6 border border-dark-300 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-red-500/30" style="opacity:0;transform:translateY(30px)">
+							<div class="flex items-center justify-center mb-4">
+								<div class="p-3 bg-dark-500 rounded-full">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-shopping-bag w-8 h-8 text-red-500"
+									>
+										<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+										<path d="M3 6h18"></path>
+										<path d="M16 10a4 4 0 0 1-8 0"></path>
+									</svg>
+								</div>
+							</div>
+							<h3 class="text-xl font-semibold text-center text-white mb-2">Pembelian Sukses</h3>
+							<p class="text-3xl font-bold text-center text-red-500">0</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="bg-dark-600 border-t border-dark-500">
+				<div class="container mx-auto px-4 py-12">
+					<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+						<div class="col-span-1 md:col-span-1">
+							<div class="flex items-center space-x-2 mb-4">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									class="lucide lucide-shopping-cart w-6 h-6 text-red-500"
+								>
+									<circle cx="8" cy="21" r="1"></circle>
+									<circle cx="19" cy="21" r="1"></circle>
+									<path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+								</svg>
+								<span class="text-xl font-bold text-white">KuroHost</span>
+							</div>
+							<p class="text-gray-400 mb-4">Penyedia panel Pterodactyl terbaik dengan harga terjangkau dan kualitas premium.</p>
+							<div class="flex space-x-4">
+								<a href="https://wa.me/6283894064758" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-500 transition-colors">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+										></path>
+									</svg>
+								</a>
+								<a href="https://www.intagram.com/only48966" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-500 transition-colors">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+										></path>
+									</svg>
+								</a>
+								<a href="https://xnxx.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-red-500 transition-colors">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+										<path
+											d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+										></path>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-span-1">
+							<h3 class="text-lg font-semibold text-white mb-4">Layanan</h3>
+							<ul class="space-y-2">
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e">Panel Pterodactyl</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e">Web Hosting</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e">VPS Hosting</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e">Domain</a></li>
+							</ul>
+						</div>
+						<div class="col-span-1">
+							<h3 class="text-lg font-semibold text-white mb-4">Perusahaan</h3>
+							<ul class="space-y-2">
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://www.itzky.xyz/about">Tentang Kami</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e">Kontak</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://www.itzky.xyz/blob">Blog</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="/">Karir</a></li>
+							</ul>
+						</div>
+						<div class="col-span-1">
+							<h3 class="text-lg font-semibold text-white mb-4">Bantuan</h3>
+							<ul class="space-y-2">
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="/">FAQ</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="/">Dokumentasi</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e">Komunitas</a></li>
+								<li><a class="text-gray-400 hover:text-red-500 transition-colors" href="/">Status Server</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="border-t border-dark-500 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+						<p class="text-gray-400 text-sm mb-4 md:mb-0">
+							©
+							<!-- -->2025<!-- -->
+							<!-- -->KuroHost<!-- -->. All rights reserved.
+						</p>
+						<div class="flex space-x-6">
+							<a class="text-gray-400 hover:text-red-500 transition-colors text-sm" href="/">Syarat & Ketentuan</a><a class="text-gray-400 hover:text-red-500 transition-colors text-sm" href="/">Kebijakan Privasi</a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="fixed inset-0 overflow-hidden -z-10 pointer-events-none">
+				<span class="bubble" style="left:10%;width:40px;height:40px;animation-delay:0s"></span><span class="bubble" style="left:20%;width:20px;height:20px;animation-delay:2s"></span>
+				<span class="bubble" style="left:50%;width:60px;height:60px;animation-delay:5s"></span><span class="bubble" style="left:70%;width:30px;height:30px;animation-delay:8s"></span>
+				<span class="bubble" style="left:90%;width:50px;height:50px;animation-delay:11s"></span>
+			</div>
+		</div>
+		<div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events:none">
+			<ol tabindex="-1" class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"></ol>
+		</div>
+		<script src="js/webpack-1eca23d54618137a.js" async=""></script>
+		<script>
+			(self.__next_f=self.__next_f||[]).push([0])
+		</script>
+		<script>
+			self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[7780,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"177\",\"static/chunks/app/layout-e92403ac589f22e8.js\"],\"ThemeProvider\"]\n3:I[1457,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"177\",\"static/chunks/app/layout-e92403ac589f22e8.js\"],\"default\"]\n4:I[7555,[],\"\"]\n5:I[1295,[],\"\"]\n6:I[552,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"177\",\"static/chunks/app/layout-e92403ac589f22e8.js\"],\"Toaster\"]\n7:I[4190,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"917\",\"static/chunks/917-7c8d1ef844b4f2b0.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"950\",\"static/chunks/950-d61fad892073cdbc.js\",\"679\",\"static/chunks/679-f889ffbdfe024a73.js\",\"298\",\"static/chunks/298-7f9e2991a0bc1972.js\",\"974\",\"static/chunks/app/page-11a3f6411a25121f.js\"],\"LoadingScreen\"]\n8:I[4865,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"917\",\"static/chunks/917-7c8d1ef844b4f2b0.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"950\",\"static/chunks/950-d61fad892073cdbc.js\",\"679\",\"static/chunks/679-f889ffbdfe024a73.js\",\"298\",\"static/chunks/298-7f9e2991a0bc1972.js\",\"974\",\"static/chunks/app/page-11a3f6411a25121f.js\"],\"default\"]\n9:I[62,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"917\",\"static/chunks/917-7c8d1ef844b4f2b0.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"950\",\"static/chunks/950-d61fad892073cdbc.js\",\"679\",\"static/chunks/679-f889ffbdfe024a73.js\",\"298\",\"static/chunks/298-7f9e2991a0bc1972.js\",\"974\",\"static/chunks/app/page-11a3f6411a25121f.js\"],\"SocialMediaButton\"]\na:I[7366,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"917\",\"static/chunks/917-7c8d1ef844b4f2b0.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"950\",\"static/chunks/950-d61fad892073cdbc.js\",\"679\",\"static/chunks/679-f889ffbdfe024a73.js\",\"298\",\"static/chunks/298-7f9e2991a0bc1972.js\",\"974\",\"static/chunks/app/page-11a3f6411a25121f.js\"],\"default\"]\nb:I[809,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"917\",\"static/chunks/917-7c8d1ef844b4f"])
+		</script>
+		<script>
+			self.__next_f.push([1,"2b0.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"950\",\"static/chunks/950-d61fad892073cdbc.js\",\"679\",\"static/chunks/679-f889ffbdfe024a73.js\",\"298\",\"static/chunks/298-7f9e2991a0bc1972.js\",\"974\",\"static/chunks/app/page-11a3f6411a25121f.js\"],\"InfoSection\"]\nc:I[5402,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"917\",\"static/chunks/917-7c8d1ef844b4f2b0.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"950\",\"static/chunks/950-d61fad892073cdbc.js\",\"679\",\"static/chunks/679-f889ffbdfe024a73.js\",\"298\",\"static/chunks/298-7f9e2991a0bc1972.js\",\"974\",\"static/chunks/app/page-11a3f6411a25121f.js\"],\"StatsSection\"]\nf:I[6874,[\"598\",\"static/chunks/598-fbec8651084d7a7e.js\",\"917\",\"static/chunks/917-7c8d1ef844b4f2b0.js\",\"57\",\"static/chunks/57-f8c6fba1509fce51.js\",\"950\",\"static/chunks/950-d61fad892073cdbc.js\",\"679\",\"static/chunks/679-f889ffbdfe024a73.js\",\"298\",\"static/chunks/298-7f9e2991a0bc1972.js\",\"974\",\"static/chunks/app/page-11a3f6411a25121f.js\"],\"\"]\n10:I[9665,[],\"OutletBoundary\"]\n13:I[9665,[],\"ViewportBoundary\"]\n15:I[9665,[],\"MetadataBoundary\"]\n17:I[6614,[],\"\"]\n:HL[\"/_next/static/media/0484562807a97172-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/4c285fdca692ea22-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/8888a3826f4a3af4-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/b957ea75a84b6ea7-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/eafabf029ad39a43-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/c380ce32ea713e99.css\",\"style\"]\nd:T450,M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 "])
+		</script>
+		<script>
+			self.__next_f.push([1,"1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413ze:T42e,M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"])
+		</script>
+		<script>
+			self.__next_f.push([1,"0:{\"P\":null,\"b\":\"RwCf3Dcg_ajcZSHQA1lVS\",\"p\":\"\",\"c\":[\"\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/c380ce32ea713e99.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"className\":\"dark\",\"children\":[[\"$\",\"head\",null,{\"children\":[\"$\",\"link\",null,{\"rel\":\"stylesheet\",\"href\":\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\"}]}],[\"$\",\"body\",null,{\"className\":\"__className_51684b\",\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"dark\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"$L3\",null,{}],\" \",[\"$\",\"$L4\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L5\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"$L6\",null,{}]]}]}]]}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"$L7\",null,{}],[\"$\",\"div\",null,{\"className\":\"min-h-screen bg-gradient-to-br from-dark-500 via-dark-700 to-dark-900\",\"children\":[[\"$\",\"$L8\",null,{}],[\"$\",\"$L9\",null,{}],[\"$\",\"section\",null,{\"className\":\"min-h-screen flex items-center justify-center pt-16 pb-20 px-4\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto\",\"children\":[\"$\",\"div\",null,{\"ref\":\"$undefined\",\"className\":\"rounded-lg border text-card-foreground max-w-2xl mx-auto shadow-2xl border-dark-300 overflow-hidden animate-slide-up bg-dark-400\",\"children\":[[\"$\",\"div\",null,{\"className\":\"h-3 bg-gradient-to-r from-red-600 to-red-800\"}],[\"$\",\"div\",null,{\"ref\":\"$undefined\",\"className\":\"p-8\",\"children\":[\"$\",\"$La\",null,{}]}]]}]}]}],[\"$\",\"$Lb\",null,{}],[\"$\",\"$Lc\",null,{}],[\"$\",\"footer\",null,{\"className\":\"bg-dark-600 border-t border-dark-500\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto px-4 py-12\",\"children\":[[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-4 gap-8\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-span-1 md:col-span-1\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center space-x-2 mb-4\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-shopping-cart w-6 h-6 text-red-500\",\"children\":[[\"$\",\"circle\",\"jimo8o\",{\"cx\":\"8\",\"cy\":\"21\",\"r\":\"1\"}],[\"$\",\"circle\",\"13723u\",{\"cx\":\"19\",\"cy\":\"21\",\"r\":\"1\"}],[\"$\",\"path\",\"9zh506\",{\"d\":\"M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12\"}],\"$undefined\"]}],[\"$\",\"span\",null,{\"className\":\"text-xl font-bold text-white\",\"children\":\"KuroHost\"}]]}],[\"$\",\"p\",null,{\"className\":\"text-gray-400 mb-4\",\"children\":\"Penyedia panel Pterodactyl terbaik dengan harga terjangkau dan kualitas premium.\"}],[\"$\",\"div\",null,{\"className\":\"flex space-x-4\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://wa.me/6283894064758\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"20\",\"height\":\"20\",\"viewBox\":\"0 0 24 24\",\"fill\":\"currentColor\",\"children\":[\"$\",\"path\",null,{\"d\":\"$d\"}]}]}],[\"$\",\"a\",null,{\"href\":\"https://www.intagram.com/only48966\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"20\",\"height\":\"20\",\"viewBox\":\"0 0 24 24\",\"fill\":\"currentColor\",\"children\":[\"$\",\"path\",null,{\"d\":\"$e\"}]}]}],[\"$\",\"a\",null,{\"href\":\"https://xnxx.com\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"20\",\"height\":\"20\",\"viewBox\":\"0 0 24 24\",\"fill\":\"currentColor\",\"children\":[\"$\",\"path\",null,{\"d\":\"M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z\"}]}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"col-span-1\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-white mb-4\",\"children\":\"Layanan\"}],[\"$\",\"ul\",null,{\"className\":\"space-y-2\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Panel Pterodactyl\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Web Hosting\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"VPS Hosting\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Domain\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"col-span-1\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-white mb-4\",\"children\":\"Perusahaan\"}],[\"$\",\"ul\",null,{\"className\":\"space-y-2\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://www.itzky.xyz/about\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Tentang Kami\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Kontak\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://www.itzky.xyz/blob\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Blog\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"/\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Karir\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"col-span-1\",\"children\":[[\"$\",\"h3\",null,{\"className\":\"text-lg font-semibold text-white mb-4\",\"children\":\"Bantuan\"}],[\"$\",\"ul\",null,{\"className\":\"space-y-2\",\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"/\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"FAQ\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"/\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Dokumentasi\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"https://chat.whatsapp.com/BNgo0IkFkHRGcu2oZRsL5e\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Komunitas\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"$Lf\",null,{\"href\":\"/\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors\",\"children\":\"Status Server\"}]}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"border-t border-dark-500 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center\",\"children\":[[\"$\",\"p\",null,{\"className\":\"text-gray-400 text-sm mb-4 md:mb-0\",\"children\":[\"© \",2025,\" \",\"KuroHost\",\". All rights reserved.\"]}],[\"$\",\"div\",null,{\"className\":\"flex space-x-6\",\"children\":[[\"$\",\"$Lf\",null,{\"href\":\"/\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors text-sm\",\"children\":\"Syarat \u0026 Ketentuan\"}],[\"$\",\"$Lf\",null,{\"href\":\"/\",\"className\":\"text-gray-400 hover:text-red-500 transition-colors text-sm\",\"children\":\"Kebijakan Privasi\"}]]}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\"fixed inset-0 overflow-hidden -z-10 pointer-events-none\",\"children\":[[\"$\",\"span\",null,{\"className\":\"bubble\",\"style\":{\"left\":\"10%\",\"width\":\"40px\",\"height\":\"40px\",\"animationDelay\":\"0s\"}}],[\"$\",\"span\",null,{\"className\":\"bubble\",\"style\":{\"left\":\"20%\",\"width\":\"20px\",\"height\":\"20px\",\"animationDelay\":\"2s\"}}],[\"$\",\"span\",null,{\"className\":\"bubble\",\"style\":{\"left\":\"50%\",\"width\":\"60px\",\"height\":\"60px\",\"animationDelay\":\"5s\"}}],[\"$\",\"span\",null,{\"className\":\"bubble\",\"style\":{\"left\":\"70%\",\"width\":\"30px\",\"height\":\"30px\",\"animationDelay\":\"8s\"}}],[\"$\",\"span\",null,{\"className\":\"bubble\",\"style\":{\"left\":\"90%\",\"width\":\"50px\",\"height\":\"50px\",\"animationDelay\":\"11s\"}}]]}]]}]],\"$undefined\",null,[\"$\",\"$L10\",null,{\"children\":[\"$L11\",\"$L12\",null]}]]}],{},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"HL9QChSaiAjObcbFgW1hv\",{\"children\":[[\"$\",\"$L13\",null,{\"children\":\"$L14\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],[\"$\",\"$L15\",null,{\"children\":\"$L16\"}]]}],false]],\"m\":\"$undefined\",\"G\":[\"$17\",\"$undefined\"],\"s\":false,\"S\":true}\n"])
+		</script>
+		<script>
+			self.__next_f.push([1,"14:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n11:null\n"])
+		</script>
+		<script>
+			self.__next_f.push([1,"12:null\n16:[[\"$\",\"title\",\"0\",{\"children\":KuroHost - Pterodactyl Panel\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Beli panel Pterodactyl dengan mudah dan cepat\"}],[\"$\",\"link\",\"2\",{\"rel\":\"icon\",\"href\":\"/itzky.png\"}]]\n"])
+		</script>
+	</body>
+</html>
